@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactus{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 75px;
+}
+form{
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    border-color: grey;
+}
+form h3{
+    color: black;
+    font-weight: 800;
+    margin-bottom: 20px;
+    align-items: center;
+}
+form input, textarea{
+    border: 0;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+form button{
+    padding: 15px;
+    background: green;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 2px;
+
+}

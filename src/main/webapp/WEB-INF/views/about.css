@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+
+body{
+    background-color: white;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+    vertical-align: center;
+}
+p{
+    font-size: 20px;
+}
+.aboutus{
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 75px;
+}
+h5{
+    text-align: center;
+    margin: 45px;
+    padding: 45px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    padding: 50px;
+  }
+  

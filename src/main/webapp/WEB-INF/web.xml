@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+    <welcome-file>views/index.jsp</welcome-file>
+</welcome-file-list>
+  
+  <servlet>
+  
+  	<servlet-name>dispatcher</servlet-name>
+  	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>LoginServlet</display-name>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>eCommerce.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>logout</display-name>
+  	<servlet-name>logout</servlet-name>
+  	<servlet-class>eCommerce.controller.logout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>dispatcher</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>logout</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>contextConfigLocation</param-name>
+  	<param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+  </context-param>
+  
+  <listener>
+  	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  
+</web-app>
